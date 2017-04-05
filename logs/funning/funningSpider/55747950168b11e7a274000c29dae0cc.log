@@ -1,0 +1,648 @@
+2017-04-01 11:28:57 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: funning)
+2017-04-01 11:28:57 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'funning.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['funning.spiders'], 'LOG_FILE': 'logs/funning/funningSpider/55747950168b11e7a274000c29dae0cc.log', 'BOT_NAME': 'funning'}
+2017-04-01 11:28:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-04-01 11:28:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-04-01 11:28:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-04-01 11:28:57 [py.warnings] WARNING: funning/pipelines.py:10: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy  import log
+
+2017-04-01 11:28:57 [scrapy.middleware] INFO: Enabled item pipelines:
+['funning.pipelines.FilePipeline',
+ 'funning.pipelines.FunningPipeline',
+ 'funning.pipelines.MySQLStorePipeline']
+2017-04-01 11:28:57 [scrapy.core.engine] INFO: Spider opened
+2017-04-01 11:28:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-04-01 11:28:57 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/robots.txt> (referer: None)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/dongtai/list_4_1.html> (referer: None)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/xiegif/list_18_1.html> (referer: None)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/quweitupian/list_2_1.html> (referer: None)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/wenzixiaohua/list_1_1.html> (referer: None)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/dongtai/list_4_2.html> (referer: http://www.zbjuran.com/dongtai/list_4_1.html)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/xiegif/list_18_213.html> (referer: http://www.zbjuran.com/xiegif/list_18_1.html)
+2017-04-01 11:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/xiegif/list_18_5.html> (referer: http://www.zbjuran.com/xiegif/list_18_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/quweitupian/list_2_2.html> (referer: http://www.zbjuran.com/quweitupian/list_2_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/xiegif/list_18_2.html> (referer: http://www.zbjuran.com/xiegif/list_18_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/xiegif/list_18_4.html> (referer: http://www.zbjuran.com/xiegif/list_18_1.html)
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206134K6108.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/dongtai/list_4_2250.html> (referer: http://www.zbjuran.com/dongtai/list_4_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/xiegif/list_18_3.html> (referer: http://www.zbjuran.com/xiegif/list_18_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/dongtai/list_4_4.html> (referer: http://www.zbjuran.com/dongtai/list_4_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/dongtai/list_4_5.html> (referer: http://www.zbjuran.com/dongtai/list_4_1.html)
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206134511916.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F20613430E26.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206134142151.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206133921c7.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/dongtai/list_4_3.html> (referer: http://www.zbjuran.com/dongtai/list_4_1.html)
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/160317/2-16031G45115346.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/160317/2-16031G44AB10.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/160317/2-16031G44211H9.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170104/1SHH500-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170104/1S6063453-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/wenzixiaohua/list_1_2.html> (referer: http://www.zbjuran.com/wenzixiaohua/list_1_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/quweitupian/list_2_3357.html> (referer: http://www.zbjuran.com/quweitupian/list_2_1.html)
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/160317/2-16031G43A6107.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170104/1S223A53-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170104/1RJ91591-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G33029158.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.zbjuran.com /robots.txt> (failed 1 times): DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170113/2-1F113113249615.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170113/2-1F113112921310.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/161108/15242C101-1.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G3293V08.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G32S91D.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertbbf5bd41bc6f4e5522a8259e80fbfd6c;;;;;;
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G32I0419.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G3261BS.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/quweitupian/list_2_5.html> (referer: http://www.zbjuran.com/quweitupian/list_2_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/wenzixiaohua/list_1_3405.html> (referer: http://www.zbjuran.com/wenzixiaohua/list_1_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/quweitupian/list_2_4.html> (referer: http://www.zbjuran.com/quweitupian/list_2_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/quweitupian/list_2_3.html> (referer: http://www.zbjuran.com/quweitupian/list_2_1.html)
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/wenzixiaohua/list_1_5.html> (referer: http://www.zbjuran.com/wenzixiaohua/list_1_1.html)
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2.html>
+None
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.zbjuran.com /robots.txt> (failed 2 times): DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com > referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170113/095K555O-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170104/1T3153163-0.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert859951d74f5559953b232a072fc3d99c;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertcaf29a7f4f442cbc72e5f6e7f18cdcfc;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170113/2-1F113105324D7.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert12b359bc79ebb29036709f71311a816b;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert713b17c0f6f10b8a1e549b1658547a6a;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/0019491133-0.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert0cc520dab38df169741bff01d9db4d93;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertef9c0699c67c4db4b85e744963e0e426;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert81179e7c2d9969ad2828bdf4be6f394e;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/wenzixiaohua/list_1_4.html> (referer: http://www.zbjuran.com/wenzixiaohua/list_1_1.html)
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_213.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_213.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_213.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte07ad30b1bc9a2bf9fa107d3361f4093;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert54fffbfc515f0e1fc48b5582cd577724;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170113/2-1F11310503K46.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F20613264W58.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206132441936.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170203/10-1F203141K2S9.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert03143f3f409e06aa26d355847557bee4;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206133A4407.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte8be954bc1ad931d91980f22c7e902f1;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert8906ca93380c654ddfba6241634e8895;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/00153S1F-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/0010294649-0.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert5cb51566840b2e126814ce3ca33ebec1;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zbjuran.com/wenzixiaohua/list_1_3.html> (referer: http://www.zbjuran.com/wenzixiaohua/list_1_1.html)
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_5.html>
+None
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://www.zbjuran.com /robots.txt> (failed 3 times): DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://www.zbjuran.com /robots.txt>: DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+DNSLookupError: DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_213.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_2.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertc30f09227b5a096c4b38661522b00f35;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert030d97045129908cfd06c83fbd7c0de2;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert85de6fb718cb5e3bcb9e26bc8f74fd46;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta8ae088ef53398d8680fbf6f6d03daea;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert91573e9806d7ad8efd736de813939cc9;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertc9b52d86fb8a04f8414acc5ce3b10d2a;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert38c59a3a7724034b3b3f6fa31ade102a;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F2061321544S.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206131ZXF.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert49a1b9edbc225bc0638950ea476aec30;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170203/10-1F20314150W63.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170203/10-1F203141243P4.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170203/10-1F2031411415B.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert9b00de34fbf146f8efb47892ac4b4876;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/000323HE-0.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta0582791cd502882bb53e5a4f34c0a37;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertc050975d926b31d7cedea87cdade8ca9;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert8a50ccc2ee7adaadd731fddebd1b3289;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte42cadcb9cb0373b969d1aa7ecf5d395;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert274d8a2a687aba69974929e2493966ee;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F2061334541V.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F20613322V25.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert50e9e7ba5e934caa53bd76e572016b3c;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/00060H4F-0.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_2.html>
+None
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G129333Z.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert0bdae28cc580f399ac7d0fad373edfb7;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G3060a64.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert9c4a8180b16cc0858947ff5b9869fde8;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert1d5ae45d19ba036eac6cf774e9b8469d;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert4f462f05c963b212a80be38b5ea4b9b1;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert89985003121ad3324beeaf07066952df;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert987160987aa1e841404ba28d8ec4da75;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206131H4G1.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G32524442.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertcc4ba6ae94e5959702771fb1f2ff7da6;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170203/10-1F203140930595.gif> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert65c77aafaed10e0861bb9ec136b914b1;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert19a912357ef12fe9760371a5696374af;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/000253O93-0.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/0002515T8-0.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/141202/00024aB6-0.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert48bc72be483bc19b5f506f9393d4cc6e;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert026ce4e9462f1a367d9f58bb7c9c3e74;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertd38cc98672d09d6451ac19738981af35;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F2061330562B.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.zbjuran.com /uploads/allimg/160317/1531224D2-0.gif> (failed 1 times): DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2250.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/xiegif/list_18_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2250.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2250.html>
+None
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G12RQ06.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G12J4412.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G1250L12.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G1230A14.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte406e430ca0b0824c73aa2dc71b9efb1;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert456747af5a3f9b174394ac97eff89c5c;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertd314192862904c73acac3632eade2f68;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert832dfeab059bd8a7cd9b45c5e692668d;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert800cff162fd52adff2698b270d85badb;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserteda5440f5158f863a9e09b745895e206;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G3034X11.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G150513C.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G14530c5.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G14250X1.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertea810ab3c6a5b1bdc94a5f0b2d3fcb39;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert67fdc5c4169bfba5ac7ef22459d8b9ba;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert1663cf6a592c65a6aceeb29c4fa532cc;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G32415H8.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G309231C.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G30QVN.jpg> referred in <None>
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170207/10-1F20G30A1324.jpg> referred in <None>
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert12b178757e4c9911710018a2e4cda843;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert9b5ef25bddebbb4ee3ef074d14ce366b;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert20943f3264cb5fc6276a833f0df668c8;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded file from <GET http://www.zbjuran.com/uploads/allimg/170206/10-1F206132Q0D4.gif> referred in <None>
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3357.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_2250.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3405.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertdd08fe488ebe89d7f6e5ff4150fdd4a7;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertad8d22facb057331e6ddcbca7713fcf3;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta6448d12cb7584c35aa10dd3da34cadf;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert21deb567f7a35cd66d5ae87d4cb465cf;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertf8e356af049a172e52eec7290c06d124;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert577f375312a4f2ce3e43d1659fc18381;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertf12a16ab55673108b5b1c8d70edb05e0;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertcb069e6b5012962c697cd130f9e10f95;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta469192b20ef99b7cdbf110915211115;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_4.html>
+None
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.zbjuran.com /uploads/allimg/160317/1531224D2-0.gif> (failed 2 times): DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_2.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert7f796f85e9cf4d9fc65d303da436f27e;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta02944fb3c33b31615a449ddfd4a20c4;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta7853efa7949cfaf4a6afc5a88d07876;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertaf897b374c11bf0dd23af62b1bf6d1a6;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_2.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3357.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3357.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3357.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertf44a131a3f1fb24496ff5ee93535f740;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert6119cfbd7f265a501a16b6c2b36bb6cc;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertad0d189c863d5d278ecd1863360a8c31;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte5ed62faedc4a16f307bcccf16c7ecca;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertd2cabed31d9e70de50058bd0fd5276e7;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_5.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert4caa9c4191866f124a2b512a2d292cb8;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertd8ca4f9886ca463f9aa74080833ff04a;;;;;;
+2017-04-01 11:28:58 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://www.zbjuran.com /uploads/allimg/160317/1531224D2-0.gif> (failed 3 times): DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert42a157d0a336c324f961e8383881d7c9;;;;;;
+2017-04-01 11:28:58 [scrapy.pipelines.files] WARNING: File (unknown-error): Error downloading file from <GET http://www.zbjuran.com /uploads/allimg/160317/1531224D2-0.gif> referred in <None>: DNS lookup failed: address 'www.zbjuran.com ' not found: [Errno -5] No address associated with hostname.
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3405.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3405.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert3527b8843e2771db65d1aef7d0132b13;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3405.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3405.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertc65c2ad71898f304a961bd9e83bd07d6;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_4.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertb187661c9e497379ebedae0cabd248f9;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert4abce81d5164fe523da55fc54b951fbe;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert9fe531859cd24caf7954c683e2457e7b;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_4.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_4.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert996c06d6d096d41985325940166d02c6;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert3c8bcffe394e9c426f10386b87156b24;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta0112f89d3bee2d7f9e7f4b90e7d7557;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertc26bd2fbd1a0f26b84ad45cfe939e4ac;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert73c2cbbf5907149c75b24fb6929b2b60;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertf1030d8bda94cb062efc57551de08373;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserta6735256cabd225f8813f08637da3c5a;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_4.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertac45f1543bfd4347cb2c50b87efe7274;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/quweitupian/list_2_3.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_5.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert3c58b62aade36236c6045411552600ed;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte8e7a6c3dbbaaec200daf5404c95c924;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_5.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertbf00fcf758717be48503c8290b4d81dd;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_5.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/dongtai/list_4_3.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinserte55b3e8c64945fef0db80e4123751ae4;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert04e2e1d6ddda1b89e3be3f1d4cf2ea3b;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_4.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertc4783bcf659c7772c16645b48c2dad38;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertf9f5d85929abe548fec057bfbb236426;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertb3192e07737ab1dd499c29fbf7448201;;;;;;
+2017-04-01 11:28:58 [shikai] INFO: ===>process_item
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_4.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsertd5173a242d8c1575f677ff2914514305;;;;;;
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_4.html>
+None
+2017-04-01 11:28:58 [shikai] INFO: ===>_do_upinsert22222222222222222
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zbjuran.com/wenzixiaohua/list_1_3.html>
+None
+2017-04-01 11:28:58 [scrapy.core.scraper] WARNING: Dropped: Item contains no images
+{'content': '  ',
+ 'item_type': '1',
+ 'link_url': u'/quweitupian/201603/53105.html',
+ 'name': u'\u90aa\u6076\u52a8\u6001\u56fe\uff1a\u4e0d\u4f5c\u6b7b\u5c31\u4e0d\u4f1a\u6b7b',
+ 'path': '  ',
+ 'src_url': u' /uploads/allimg/160317/1531224D2-0.gif'}
+2017-04-01 11:28:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-04-01 11:28:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 6,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 6,
+ 'downloader/request_bytes': 8474,
+ 'downloader/request_count': 31,
+ 'downloader/request_method_count/GET': 31,
+ 'downloader/response_bytes': 414299,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'file_count': 64,
+ 'file_status_count/uptodate': 64,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 4, 1, 3, 28, 58, 857459),
+ 'item_dropped_count': 1,
+ 'item_dropped_reasons_count/DropItem': 1,
+ 'item_scraped_count': 96,
+ 'log_count/DEBUG': 192,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 295,
+ 'log_count/WARNING': 3,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'start_time': datetime.datetime(2017, 4, 1, 3, 28, 57, 494238)}
+2017-04-01 11:28:58 [scrapy.core.engine] INFO: Spider closed (finished)
